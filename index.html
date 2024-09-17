@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Hi Truc.</strong>
+                        <p>
+                            Chắc cũng muộn rồi ha, chiều giờ cũng hơi bận nên giờ mới rảnh làm cái này.Hôm nay cũng không nhớ là trung thu luôn á, thôi thì chúc Trúc ngày càng học giỏi, không ốm vặt.lúc nào cũng có nhiều năng lượng và giữ nụ cười trên môi nhé...mà không chúc ngày càng xinh đâu, vì sao? , vì nó thừa =)). 
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
